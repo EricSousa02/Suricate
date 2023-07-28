@@ -1,3 +1,15 @@
+# Suricato
+projeto usando codeigniter 4 de um sistema para justificar faltas 
+
+*INSTRUÇÕES:
+.importe o arquivo sql em uma tabela chamada "suricato"
+.para entrar na tela de usuarios use o email teste@gmail.com
+.para entrar na tela de administradores use o email teto@gmail.com
+.a senha de ambos é 123
+
+
+
+
 # CodeIgniter 4 Framework
 
 ## What is CodeIgniter?
