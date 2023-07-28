@@ -1,0 +1,21 @@
+CRITICAL - 2022-11-30 09:02:27 --> Illegal string offset 'imagem'
+in APPPATH\Controllers\Product.php on line 627.
+ 1 APPPATH\Controllers\Product.php(627): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'imagem\'', 'APPPATH\\Controllers\\Product.php', 627, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->updateOfUser()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 09:03:09 --> Illegal string offset 'imagem'
+in APPPATH\Controllers\Product.php on line 627.
+ 1 APPPATH\Controllers\Product.php(627): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'imagem\'', 'APPPATH\\Controllers\\Product.php', 627, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->updateOfUser()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-30 09:17:18 --> Undefined variable: old_img_name
+in APPPATH\Controllers\Product.php on line 634.
+ 1 APPPATH\Controllers\Product.php(634): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: old_img_name', 'APPPATH\\Controllers\\Product.php', 634, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->updateOfUser()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

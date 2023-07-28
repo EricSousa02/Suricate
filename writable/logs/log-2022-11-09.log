@@ -1,0 +1,22 @@
+CRITICAL - 2022-11-09 08:37:54 --> Undefined variable: usuario
+in APPPATH\Views\homeUsuario.php on line 79.
+ 1 APPPATH\Views\homeUsuario.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: usuario', 'APPPATH\\Views\\homeUsuario.php', 79, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\homeUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('homeUsuario', [], true)
+ 5 APPPATH\Controllers\Product.php(588): view('homeUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->homeUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 08:39:01 --> Undefined variable: lastDate
+in APPPATH\Views\homeUsuario.php on line 6.
+ 1 APPPATH\Views\homeUsuario.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: lastDate', 'APPPATH\\Views\\homeUsuario.php', 6, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\homeUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('homeUsuario', [], true)
+ 5 APPPATH\Controllers\Product.php(593): view('homeUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->homeUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

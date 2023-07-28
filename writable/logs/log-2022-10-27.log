@@ -1,0 +1,204 @@
+CRITICAL - 2022-10-27 08:56:27 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Views\home.php on line 24.
+ 1 APPPATH\Views\home.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Views\\home.php', 24, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(214): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 08:57:19 --> Trying to get property 'finished' of non-object
+in APPPATH\Views\home.php on line 20.
+ 1 APPPATH\Views\home.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'finished\' of non-object', 'APPPATH\\Views\\home.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(214): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:02:58 --> Trying to get property 'finished' of non-object
+in APPPATH\Views\home.php on line 20.
+ 1 APPPATH\Views\home.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'finished\' of non-object', 'APPPATH\\Views\\home.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(214): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:04:36 --> Undefined variable: admin
+in APPPATH\Views\home.php on line 18.
+ 1 APPPATH\Views\home.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin', 'APPPATH\\Views\\home.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(222): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:09:15 --> Trying to get property 'finished' of non-object
+in APPPATH\Views\home.php on line 20.
+ 1 APPPATH\Views\home.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'finished\' of non-object', 'APPPATH\\Views\\home.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(216): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:10:09 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Views\product_view.php on line 99.
+ 1 APPPATH\Views\product_view.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Views\\product_view.php', 99, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 5 APPPATH\Controllers\Product.php(28): view('product_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:10:13 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Views\product_view.php on line 99.
+ 1 APPPATH\Views\product_view.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Views\\product_view.php', 99, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 5 APPPATH\Controllers\Product.php(28): view('product_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:12:38 --> Trying to get property 'finished' of non-object
+in APPPATH\Views\home.php on line 7.
+ 1 APPPATH\Views\home.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'finished\' of non-object', 'APPPATH\\Views\\home.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(216): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:14:37 --> Trying to get property 'finished' of non-object
+in APPPATH\Views\home.php on line 7.
+ 1 APPPATH\Views\home.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'finished\' of non-object', 'APPPATH\\Views\\home.php', 7, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(216): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:27:33 --> Undefined property: App\Controllers\Product::$db
+in APPPATH\Controllers\Product.php on line 213.
+ 1 APPPATH\Controllers\Product.php(213): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Product::$db', 'APPPATH\\Controllers\\Product.php', 213, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 09:31:12 --> Undefined property: App\Controllers\Product::$db
+in APPPATH\Controllers\Product.php on line 214.
+ 1 APPPATH\Controllers\Product.php(214): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Product::$db', 'APPPATH\\Controllers\\Product.php', 214, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-27 10:27:53 --> mysqli_sql_exception: Unknown column 'category_name' in 'field list' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('\n        SELECT...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\n        SELECT...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\n        SELECT...')
+#3 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(70): CodeIgniter\Database\BaseConnection->query('\n        SELECT...')
+#4 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(217): App\Models\Product_model->getTurmaA()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->home()
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-27 10:27:53 --> Unknown column 'category_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+        SELECT category_name FROM product WHERE category_name LIKE \'Turma A%\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT category_name FROM product WHERE category_name LIKE \'Turma A%\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT category_name FROM product WHERE category_name LIKE \'Turma A%\'')
+ 4 APPPATH\Models\Product_model.php(70): CodeIgniter\Database\BaseConnection->query('
+        SELECT category_name FROM product WHERE category_name LIKE \'Turma A%\'')
+ 5 APPPATH\Controllers\Product.php(217): App\Models\Product_model->getTurmaA()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-27 10:28:08 --> mysqli_sql_exception: Unknown column 'category_name' in 'field list' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('\n        SELECT...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\n        SELECT...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\n        SELECT...')
+#3 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(70): CodeIgniter\Database\BaseConnection->query('\n        SELECT...')
+#4 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(217): App\Models\Product_model->getTurmaA()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->home()
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-27 10:28:08 --> Unknown column 'category_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+        SELECT category_name FROM product WHERE category_name LIKE \'Turma A%\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT category_name FROM product WHERE category_name LIKE \'Turma A%\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT category_name FROM product WHERE category_name LIKE \'Turma A%\'')
+ 4 APPPATH\Models\Product_model.php(70): CodeIgniter\Database\BaseConnection->query('
+        SELECT category_name FROM product WHERE category_name LIKE \'Turma A%\'')
+ 5 APPPATH\Controllers\Product.php(217): App\Models\Product_model->getTurmaA()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-27 10:28:12 --> mysqli_sql_exception: Unknown column 'category_name' in 'field list' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('\n        SELECT...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\n        SELECT...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\n        SELECT...')
+#3 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(70): CodeIgniter\Database\BaseConnection->query('\n        SELECT...')
+#4 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(217): App\Models\Product_model->getTurmaA()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->home()
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-27 10:28:12 --> Unknown column 'category_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+        SELECT category_name FROM product WHERE category_name LIKE \'Turma A%\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT category_name FROM product WHERE category_name LIKE \'Turma A%\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT category_name FROM product WHERE category_name LIKE \'Turma A%\'')
+ 4 APPPATH\Models\Product_model.php(70): CodeIgniter\Database\BaseConnection->query('
+        SELECT category_name FROM product WHERE category_name LIKE \'Turma A%\'')
+ 5 APPPATH\Controllers\Product.php(217): App\Models\Product_model->getTurmaA()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-27 13:59:35 --> Call to undefined function form_open()
+in APPPATH\Views\registrarAluno.php on line 30.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('registrarAluno', [], true)
+ 4 APPPATH\Controllers\Product.php(314): view('registrarAluno')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->registrarAluno()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

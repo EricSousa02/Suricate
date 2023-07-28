@@ -1,0 +1,208 @@
+CRITICAL - 2022-11-17 15:56:39 --> Undefined property: App\Controllers\Product::$email
+in APPPATH\Controllers\Product.php on line 43.
+ 1 APPPATH\Controllers\Product.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Product::$email', 'APPPATH\\Controllers\\Product.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->teste()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 15:57:06 --> Undefined property: App\Controllers\Product::$load
+in APPPATH\Controllers\Product.php on line 39.
+ 1 APPPATH\Controllers\Product.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Product::$load', 'APPPATH\\Controllers\\Product.php', 39, [])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->teste()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 15:59:21 --> Undefined property: App\Controllers\Product::$email
+in APPPATH\Controllers\Product.php on line 43.
+ 1 APPPATH\Controllers\Product.php(43): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Product::$email', 'APPPATH\\Controllers\\Product.php', 43, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->teste()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 16:00:04 --> Call to undefined method CodeIgniter\Email\Email::from()
+in APPPATH\Controllers\Product.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->teste()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 16:00:42 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-17 16:00:42 --> 220 smtp.gmail.com ESMTP t22-20020a9d5916000000b006621427ecc7sm651845oth.60 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [167.249.17.3]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials t22-20020a9d5916000000b006621427ecc7sm651845oth.60 - gsmtp
+
+ERROR - 2022-11-17 16:00:47 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-17 16:00:47 --> 220 smtp.gmail.com ESMTP k16-20020a544690000000b0035a534b9237sm617871oic.29 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [167.249.17.3]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials k16-20020a544690000000b0035a534b9237sm617871oic.29 - gsmtp
+
+ERROR - 2022-11-17 16:01:02 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-17 16:01:02 --> 220 smtp.gmail.com ESMTP g33-20020a4a8964000000b0049f5ce88583sm625863ooi.7 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [167.249.17.3]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials g33-20020a4a8964000000b0049f5ce88583sm625863ooi.7 - gsmtp
+
+ERROR - 2022-11-17 16:02:02 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-17 16:02:02 --> 220 smtp.gmail.com ESMTP f16-20020a056871071000b0013ae5246449sm808393oap.22 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [167.249.17.3]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials f16-20020a056871071000b0013ae5246449sm808393oap.22 - gsmtp
+
+ERROR - 2022-11-17 16:02:03 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-17 16:02:03 --> 220 smtp.gmail.com ESMTP f16-20020a056871071000b0013ae5246449sm808393oap.22 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [167.249.17.3]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials f16-20020a056871071000b0013ae5246449sm808393oap.22 - gsmtp
+
+Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials f16-20020a056871071000b0013ae5246449sm808393oap.22 - gsmtp
+
+ERROR - 2022-11-17 16:02:07 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-17 16:02:07 --> 220 smtp.gmail.com ESMTP o184-20020aca41c1000000b0034fc91dbd7bsm587797oia.58 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [167.249.17.3]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials o184-20020aca41c1000000b0034fc91dbd7bsm587797oia.58 - gsmtp
+
+ERROR - 2022-11-17 16:02:08 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-17 16:02:08 --> 220 smtp.gmail.com ESMTP o184-20020aca41c1000000b0034fc91dbd7bsm587797oia.58 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [167.249.17.3]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials o184-20020aca41c1000000b0034fc91dbd7bsm587797oia.58 - gsmtp
+
+Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials o184-20020aca41c1000000b0034fc91dbd7bsm587797oia.58 - gsmtp
+
+ERROR - 2022-11-17 16:06:10 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-17 16:06:10 --> 220 smtp.gmail.com ESMTP q11-20020a9d630b000000b0066da36d2c45sm681525otk.22 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [167.249.17.3]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials q11-20020a9d630b000000b0066da36d2c45sm681525otk.22 - gsmtp
+
+ERROR - 2022-11-17 16:06:12 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-17 16:06:12 --> 220 smtp.gmail.com ESMTP q11-20020a9d630b000000b0066da36d2c45sm681525otk.22 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [167.249.17.3]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials q11-20020a9d630b000000b0066da36d2c45sm681525otk.22 - gsmtp
+
+Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials q11-20020a9d630b000000b0066da36d2c45sm681525otk.22 - gsmtp
+
+ERROR - 2022-11-17 16:06:16 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-17 16:06:16 --> 220 smtp.gmail.com ESMTP v7-20020a056870708700b0013c8ae74a14sm826377oae.42 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [167.249.17.3]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials v7-20020a056870708700b0013c8ae74a14sm826377oae.42 - gsmtp
+
+ERROR - 2022-11-17 16:06:17 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-17 16:06:17 --> 220 smtp.gmail.com ESMTP v7-20020a056870708700b0013c8ae74a14sm826377oae.42 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [167.249.17.3]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials v7-20020a056870708700b0013c8ae74a14sm826377oae.42 - gsmtp
+
+Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials v7-20020a056870708700b0013c8ae74a14sm826377oae.42 - gsmtp
+

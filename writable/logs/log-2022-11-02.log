@@ -1,0 +1,458 @@
+CRITICAL - 2022-11-02 15:36:49 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\alunos_view.php on line 71.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('alunos_view', [], true)
+ 4 APPPATH\Controllers\Product.php(346): view('alunos_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->Alunos_cadastrados()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 15:55:36 --> Undefined variable $category
+in APPPATH\Views\alunos_view.php on line 141.
+ 1 APPPATH\Views\alunos_view.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'APPPATH\\Views\\alunos_view.php', 141)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\alunos_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('alunos_view', [], true)
+ 5 APPPATH\Controllers\Product.php(362): view('alunos_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->Alunos_cadastrados()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 16:03:53 --> Undefined property: stdClass::$category_name
+in APPPATH\Views\alunos_view.php on line 91.
+ 1 APPPATH\Views\alunos_view.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$category_name', 'APPPATH\\Views\\alunos_view.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\alunos_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('alunos_view', [], true)
+ 5 APPPATH\Controllers\Product.php(364): view('alunos_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->Alunos_cadastrados()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 16:05:16 --> mysqli_sql_exception: Unknown column 'product_category_id' in 'on clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(362): App\Models\Product_model->getAluno()
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->Alunos_cadastrados()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-02 16:05:16 --> Unknown column 'product_category_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `alunos`
+LEFT JOIN `category` ON `category_id` = `product_category_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `alunos`
+LEFT JOIN `category` ON `category_id` = `product_category_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `alunos`
+LEFT JOIN `category` ON `category_id` = `product_category_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `alunos`
+LEFT JOIN `category` ON `category_id` = `product_category_id`', [], false)
+ 5 APPPATH\Models\Product_model.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Product.php(362): App\Models\Product_model->getAluno()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->Alunos_cadastrados()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 19:55:23 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\home.php on line 99.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Product.php(243): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 20:21:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT max(id) FROM product' at line 1 in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('\n        SELECT...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\n        SELECT...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\n        SELECT...')
+#3 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(139): CodeIgniter\Database\BaseConnection->query('\n        SELECT...')
+#4 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(234): App\Models\Product_model->getLastdate()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->home()
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-02 20:21:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELECT max(id) FROM product' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+        SELECT datetime_created FROM product WHERE product.id = SELECT max(id) FROM product', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT datetime_created FROM product WHERE product.id = SELECT max(id) FROM product')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT datetime_created FROM product WHERE product.id = SELECT max(id) FROM product')
+ 4 APPPATH\Models\Product_model.php(139): CodeIgniter\Database\BaseConnection->query('
+        SELECT datetime_created FROM product WHERE product.id = SELECT max(id) FROM product')
+ 5 APPPATH\Controllers\Product.php(234): App\Models\Product_model->getLastdate()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 20:26:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM product' at line 1 in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('\n        SELECT...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\n        SELECT...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\n        SELECT...')
+#3 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(139): CodeIgniter\Database\BaseConnection->query('\n        SELECT...')
+#4 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(234): App\Models\Product_model->getLastdate()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->home()
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-02 20:26:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM product' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+        SELECT datetime_created FROM product WHERE product.id = max(id) FROM product', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT datetime_created FROM product WHERE product.id = max(id) FROM product')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT datetime_created FROM product WHERE product.id = max(id) FROM product')
+ 4 APPPATH\Models\Product_model.php(139): CodeIgniter\Database\BaseConnection->query('
+        SELECT datetime_created FROM product WHERE product.id = max(id) FROM product')
+ 5 APPPATH\Controllers\Product.php(234): App\Models\Product_model->getLastdate()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 20:26:26 --> mysqli_sql_exception: Invalid use of group function in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('\n        SELECT...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\n        SELECT...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\n        SELECT...')
+#3 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(139): CodeIgniter\Database\BaseConnection->query('\n        SELECT...')
+#4 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(234): App\Models\Product_model->getLastdate()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->home()
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-02 20:26:26 --> Invalid use of group function
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+        SELECT datetime_created FROM product WHERE max(id)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT datetime_created FROM product WHERE max(id)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT datetime_created FROM product WHERE max(id)')
+ 4 APPPATH\Models\Product_model.php(139): CodeIgniter\Database\BaseConnection->query('
+        SELECT datetime_created FROM product WHERE max(id)')
+ 5 APPPATH\Controllers\Product.php(234): App\Models\Product_model->getLastdate()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 20:30:02 --> mysqli_sql_exception: Unknown column 'LAST' in 'field list' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('\n        SELECT...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\n        SELECT...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\n        SELECT...')
+#3 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(139): CodeIgniter\Database\BaseConnection->query('\n        SELECT...')
+#4 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(234): App\Models\Product_model->getLastdate()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->home()
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-02 20:30:02 --> Unknown column 'LAST' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+        SELECT LAST datetime_created FROM product', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT LAST datetime_created FROM product')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT LAST datetime_created FROM product')
+ 4 APPPATH\Models\Product_model.php(139): CodeIgniter\Database\BaseConnection->query('
+        SELECT LAST datetime_created FROM product')
+ 5 APPPATH\Controllers\Product.php(234): App\Models\Product_model->getLastdate()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-02 20:30:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(datetime_created) FROM product' at line 1 in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('\n        SELECT...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\n        SELECT...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\n        SELECT...')
+#3 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(139): CodeIgniter\Database\BaseConnection->query('\n        SELECT...')
+#4 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(234): App\Models\Product_model->getLastdate()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->home()
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-02 20:30:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(datetime_created) FROM product' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+        SELECT LAST(datetime_created) FROM product', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT LAST(datetime_created) FROM product')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT LAST(datetime_created) FROM product')
+ 4 APPPATH\Models\Product_model.php(139): CodeIgniter\Database\BaseConnection->query('
+        SELECT LAST(datetime_created) FROM product')
+ 5 APPPATH\Controllers\Product.php(234): App\Models\Product_model->getLastdate()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:35:18 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:38:43 --> date(): Argument #1 ($format) must be of type string, array given
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): date([...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:41:17 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:42:56 --> Array to string conversion
+in APPPATH\Views\home.php on line 200.
+ 1 APPPATH\Views\home.php(200): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 200)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:43:46 --> Array to string conversion
+in APPPATH\Views\home.php on line 200.
+ 1 APPPATH\Views\home.php(200): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 200)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:45:12 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH\Views\home.php on line 199.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:45:58 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:46:00 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:46:00 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:46:00 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:46:00 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:46:01 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:46:01 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:46:01 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:46:01 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:48:33 --> Undefined property: App\Controllers\Product::$db
+in APPPATH\Controllers\Product.php on line 230.
+ 1 APPPATH\Controllers\Product.php(230): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Product::$db', 'APPPATH\\Controllers\\Product.php', 230)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:50:33 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(250): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:52:06 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(250): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:52:40 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(250): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:55:38 --> Class "App\Controllers\DB" not found
+in APPPATH\Controllers\Product.php on line 240.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 20:56:20 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(251): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 21:00:57 --> Undefined property: App\Controllers\Product::$db
+in APPPATH\Controllers\Product.php on line 260.
+ 1 APPPATH\Controllers\Product.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Product::$db', 'APPPATH\\Controllers\\Product.php', 260)
+ 2 APPPATH\Controllers\Product.php(232): App\Controllers\Product->getDate()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 21:02:02 --> Undefined property: App\Controllers\Product::$db
+in APPPATH\Controllers\Product.php on line 260.
+ 1 APPPATH\Controllers\Product.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Product::$db', 'APPPATH\\Controllers\\Product.php', 260)
+ 2 APPPATH\Controllers\Product.php(232): App\Controllers\Product->getDate()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-02 21:02:40 --> Array to string conversion
+in APPPATH\Views\home.php on line 199.
+ 1 APPPATH\Views\home.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\home.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Product.php(244): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

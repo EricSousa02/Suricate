@@ -1,0 +1,99 @@
+CRITICAL - 2022-12-07 13:27:07 --> unlink(assets/uploads/): Is a directory
+in APPPATH\Controllers\Product.php on line 635.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(assets/uploads/): Is a directory', 'APPPATH\\Controllers\\Product.php', 635, [...])
+ 2 APPPATH\Controllers\Product.php(635): unlink('FCPATH\\assets\\uploads')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->updateOfUser()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 13:28:58 --> unlink(1670429410_dceb15590df83b636820.jpg): No such file or directory
+in APPPATH\Controllers\Product.php on line 635.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(1670429410_dceb15590df83b636820.jpg): No such file or directory', 'APPPATH\\Controllers\\Product.php', 635, [...])
+ 2 APPPATH\Controllers\Product.php(635): unlink('1670429410_dceb15590df83b636820.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->updateOfUser()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 13:46:20 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Product.php on line 682.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->deleteOfUser()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 15:34:17 --> Undefined property: stdClass::$imagem
+in APPPATH\Views\product_view.php on line 354.
+ 1 APPPATH\Views\product_view.php(354): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$imagem', 'APPPATH\\Views\\product_view.php', 354, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 5 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 15:35:23 --> Undefined property: stdClass::$imagem
+in APPPATH\Views\product_view.php on line 355.
+ 1 APPPATH\Views\product_view.php(355): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$imagem', 'APPPATH\\Views\\product_view.php', 355, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 5 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 15:38:19 --> Undefined property: stdClass::$imagem
+in APPPATH\Views\product_view.php on line 356.
+ 1 APPPATH\Views\product_view.php(356): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$imagem', 'APPPATH\\Views\\product_view.php', 356, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 5 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 15:38:47 --> Undefined property: stdClass::$imagem
+in APPPATH\Views\product_view.php on line 217.
+ 1 APPPATH\Views\product_view.php(217): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$imagem', 'APPPATH\\Views\\product_view.php', 217, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 5 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 15:38:51 --> Undefined property: stdClass::$imagem
+in APPPATH\Views\product_view.php on line 217.
+ 1 APPPATH\Views\product_view.php(217): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$imagem', 'APPPATH\\Views\\product_view.php', 217, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 5 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 16:04:36 --> Undefined property: stdClass::$imagem
+in APPPATH\Views\product_view.php on line 434.
+ 1 APPPATH\Views\product_view.php(434): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$imagem', 'APPPATH\\Views\\product_view.php', 434, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 5 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 16:04:50 --> Undefined property: stdClass::$imagem
+in APPPATH\Views\product_view.php on line 434.
+ 1 APPPATH\Views\product_view.php(434): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$imagem', 'APPPATH\\Views\\product_view.php', 434, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 5 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

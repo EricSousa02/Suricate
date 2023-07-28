@@ -1,0 +1,100 @@
+CRITICAL - 2022-11-25 09:14:37 --> Cannot use object of type stdClass as array
+in APPPATH\Views\product_view.php on line 396.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 4 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 09:15:53 --> Cannot use object of type stdClass as array
+in APPPATH\Views\product_view.php on line 137.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 4 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 09:16:26 --> Cannot use object of type stdClass as array
+in APPPATH\Views\product_view.php on line 137.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 4 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 09:17:51 --> Cannot use object of type stdClass as array
+in APPPATH\Views\product_view.php on line 139.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 4 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 09:17:53 --> Cannot use object of type stdClass as array
+in APPPATH\Views\product_view.php on line 139.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 4 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 09:19:26 --> Cannot use object of type stdClass as array
+in APPPATH\Views\product_view.php on line 139.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 4 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 09:30:52 --> Cannot use object of type stdClass as array
+in APPPATH\Views\product_view.php on line 139.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 4 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 09:30:53 --> Cannot use object of type stdClass as array
+in APPPATH\Views\product_view.php on line 139.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 4 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 09:47:37 --> Cannot use object of type stdClass as array
+in APPPATH\Views\product_view.php on line 139.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 4 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 10:37:18 --> Call to undefined function val()
+in APPPATH\Views\product_view.php on line 655.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 4 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

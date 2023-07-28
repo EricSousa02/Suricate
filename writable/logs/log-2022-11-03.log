@@ -1,0 +1,597 @@
+ERROR - 2022-11-03 08:06:45 --> mysqli_sql_exception: Table 'pos_db.alunos' doesn't exist in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(235): App\Models\Product_model->getAluno()
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->home()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-03 08:06:45 --> Table 'pos_db.alunos' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `alunos`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `alunos`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `alunos`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `alunos`', [], false)
+ 5 APPPATH\Models\Product_model.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Product.php(235): App\Models\Product_model->getAluno()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->home()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 09:24:07 --> Trying to get property 'product_name' of non-object
+in APPPATH\Views\usuarios_view.php on line 75.
+ 1 APPPATH\Views\usuarios_view.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'product_name\' of non-object', 'APPPATH\\Views\\usuarios_view.php', 75, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios_view', [], true)
+ 5 APPPATH\Controllers\Product.php(455): view('usuarios_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 09:46:31 --> mysqli_sql_exception: Column 'product_name' cannot be null in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(47): App\Models\Product_model->saveProduct(Array)
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->save()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-03 09:46:31 --> Column 'product_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`, `complemento`) VALUES (NULL, \'Doença do aluno\', \'19\', \'2022/11/03 09:46:02\', \'preguiça\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`, `complemento`) VALUES (NULL, \'Doença do aluno\', \'19\', \'2022/11/03 09:46:02\', \'preguiça\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`, `complemento`) VALUES (NULL, \'Doença do aluno\', \'19\', \'2022/11/03 09:46:02\', \'preguiça\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`, `complemento`) VALUES (:product_name:, :product_price:, :product_category_id:, :datetime_created:, :complemento:)', [...], false)
+ 5 APPPATH\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(47): App\Models\Product_model->saveProduct([...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 09:46:31 --> mysqli_sql_exception: Column 'product_name' cannot be null in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(47): App\Models\Product_model->saveProduct(Array)
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->save()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-03 09:46:31 --> Column 'product_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`, `complemento`) VALUES (NULL, \'Doença do aluno\', \'19\', \'2022/11/03 09:46:02\', \'preguiça\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`, `complemento`) VALUES (NULL, \'Doença do aluno\', \'19\', \'2022/11/03 09:46:02\', \'preguiça\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`, `complemento`) VALUES (NULL, \'Doença do aluno\', \'19\', \'2022/11/03 09:46:02\', \'preguiça\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`, `complemento`) VALUES (:product_name:, :product_price:, :product_category_id:, :datetime_created:, :complemento:)', [...], false)
+ 5 APPPATH\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(47): App\Models\Product_model->saveProduct([...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 09:46:46 --> mysqli_sql_exception: Column 'product_name' cannot be null in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(47): App\Models\Product_model->saveProduct(Array)
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->save()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-03 09:46:46 --> Column 'product_name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`, `complemento`) VALUES (NULL, \'Doença do aluno\', \'19\', \'2022/11/03 09:46:02\', \'preguiça\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`, `complemento`) VALUES (NULL, \'Doença do aluno\', \'19\', \'2022/11/03 09:46:02\', \'preguiça\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`, `complemento`) VALUES (NULL, \'Doença do aluno\', \'19\', \'2022/11/03 09:46:02\', \'preguiça\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`, `complemento`) VALUES (:product_name:, :product_price:, :product_category_id:, :datetime_created:, :complemento:)', [...], false)
+ 5 APPPATH\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(47): App\Models\Product_model->saveProduct([...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 11:24:14 --> Undefined variable: admin
+in APPPATH\Views\usuarios_view.php on line 94.
+ 1 APPPATH\Views\usuarios_view.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: admin', 'APPPATH\\Views\\usuarios_view.php', 94, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios_view', [], true)
+ 5 APPPATH\Controllers\Product.php(484): view('usuarios_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 11:30:07 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Views\usuarios_view.php on line 75.
+ 1 APPPATH\Views\usuarios_view.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Views\\usuarios_view.php', 75, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios_view', [], true)
+ 5 APPPATH\Controllers\Product.php(484): view('usuarios_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 11:31:26 --> Trying to get property 'product_name' of non-object
+in APPPATH\Views\usuarios_view.php on line 75.
+ 1 APPPATH\Views\usuarios_view.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'product_name\' of non-object', 'APPPATH\\Views\\usuarios_view.php', 75, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios_view', [], true)
+ 5 APPPATH\Controllers\Product.php(484): view('usuarios_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 14:31:35 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Views\usuarios_view.php on line 75.
+ 1 APPPATH\Views\usuarios_view.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Views\\usuarios_view.php', 75, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios_view', [], true)
+ 5 APPPATH\Controllers\Product.php(484): view('usuarios_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 14:34:08 --> syntax error, unexpected 'endif' (T_ENDIF)
+in APPPATH\Views\usuarios_view.php on line 126.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios_view', [], true)
+ 3 APPPATH\Controllers\Product.php(484): view('usuarios_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-03 15:05:44 --> syntax error, unexpected 'else' (T_ELSE)
+in APPPATH\Views\usuarios_view.php on line 79.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('usuarios_view', [], true)
+ 3 APPPATH\Controllers\Product.php(484): view('usuarios_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:39:21 --> mysqli_sql_exception: Unknown column 'Josivan' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:39:21 --> Unknown column 'Josivan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name = Josivan', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name = Josivan')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name = Josivan')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name = Josivan')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:41:03 --> mysqli_sql_exception: Unknown column 'Josivan' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:41:03 --> Unknown column 'Josivan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name = Josivan', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name = Josivan')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name = Josivan')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name = Josivan')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:41:03 --> mysqli_sql_exception: Unknown column 'Josivan' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:41:03 --> Unknown column 'Josivan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name = Josivan', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name = Josivan')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name = Josivan')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name = Josivan')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:41:04 --> mysqli_sql_exception: Unknown column 'Josivan' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:41:04 --> Unknown column 'Josivan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name = Josivan', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name = Josivan')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name = Josivan')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name = Josivan')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:41:05 --> mysqli_sql_exception: Unknown column 'Josivan' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:41:05 --> Unknown column 'Josivan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name = Josivan', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name = Josivan')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name = Josivan')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name = Josivan')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:41:05 --> mysqli_sql_exception: Unknown column 'Josivan' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:41:05 --> Unknown column 'Josivan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name = Josivan', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name = Josivan')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name = Josivan')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name = Josivan')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:41:05 --> mysqli_sql_exception: Unknown column 'Josivan' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:41:05 --> Unknown column 'Josivan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name = Josivan', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name = Josivan')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name = Josivan')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name = Josivan')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:42:41 --> mysqli_sql_exception: Unknown column 'gusta' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:42:41 --> Unknown column 'gusta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name = gusta', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name = gusta')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name = gusta')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name = gusta')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:43:16 --> mysqli_sql_exception: Unknown column 'gusta' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:43:16 --> Unknown column 'gusta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name = gusta', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name = gusta')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name = gusta')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name = gusta')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:43:22 --> mysqli_sql_exception: Unknown column 'gusta' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:43:22 --> Unknown column 'gusta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name = gusta', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name = gusta')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name = gusta')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name = gusta')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:46:13 --> mysqli_sql_exception: Unknown column 'Josivan' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:46:13 --> Unknown column 'Josivan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name = Josivan', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name = Josivan')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name = Josivan')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name = Josivan')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:48:57 --> mysqli_sql_exception: Unknown column 'Josivan' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:48:57 --> Unknown column 'Josivan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name = Josivan', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name = Josivan')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name = Josivan')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name = Josivan')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:48:58 --> mysqli_sql_exception: Unknown column 'Josivan' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:48:58 --> Unknown column 'Josivan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name = Josivan', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name = Josivan')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name = Josivan')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name = Josivan')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:49:00 --> mysqli_sql_exception: Unknown column 'Josivan' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:49:00 --> Unknown column 'Josivan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name = Josivan', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name = Josivan')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name = Josivan')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name = Josivan')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:51:22 --> mysqli_sql_exception: Unknown column 'Josivan' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:51:22 --> Unknown column 'Josivan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name LIKE Josivan', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name LIKE Josivan')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name LIKE Josivan')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name LIKE Josivan')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:51:24 --> mysqli_sql_exception: Unknown column 'Josivan' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:51:24 --> Unknown column 'Josivan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name LIKE Josivan', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name LIKE Josivan')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name LIKE Josivan')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name LIKE Josivan')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:51:25 --> mysqli_sql_exception: Unknown column 'Josivan' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:51:25 --> Unknown column 'Josivan' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT product_name FROM product WHERE product_name LIKE Josivan', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT product_name FROM product WHERE product_name LIKE Josivan')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT product_name FROM product WHERE product_name LIKE Josivan')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT product_name FROM product WHERE product_name LIKE Josivan')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:54:36 --> mysqli_sql_exception: Unknown column 'gusta' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(pr...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT count(pr...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:54:36 --> Unknown column 'gusta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(product_name) FROM product WHERE product_name LIKE gusta', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(product_name) FROM product WHERE product_name LIKE gusta')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(product_name) FROM product WHERE product_name LIKE gusta')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT count(product_name) FROM product WHERE product_name LIKE gusta')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:55:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'gusta' at line 1 in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(pr...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT count(pr...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:55:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'gusta' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(product_name) FROM product WHERE product_name is gusta', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(product_name) FROM product WHERE product_name is gusta')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(product_name) FROM product WHERE product_name is gusta')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT count(product_name) FROM product WHERE product_name is gusta')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-03 15:56:02 --> mysqli_sql_exception: Unknown column 'gusta' in 'where clause' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(pr...')
+#3 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT count(pr...')
+#4 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-03 15:56:02 --> Unknown column 'gusta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT count(product_name) FROM product WHERE product_name = gusta', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT count(product_name) FROM product WHERE product_name = gusta')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT count(product_name) FROM product WHERE product_name = gusta')
+ 4 APPPATH\Controllers\Product.php(487): CodeIgniter\Database\BaseConnection->query('SELECT count(product_name) FROM product WHERE product_name = gusta')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

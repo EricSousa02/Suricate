@@ -1,0 +1,44 @@
+CRITICAL - 2022-10-21 06:47:06 --> Undefined variable: product
+in APPPATH\Views\administradores_view.php on line 75.
+ 1 APPPATH\Views\administradores_view.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: product', 'APPPATH\\Views\\administradores_view.php', 75, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\administradores_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('administradores_view', [], true)
+ 5 APPPATH\Controllers\Product.php(100): view('administradores_view')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->adm()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 06:48:03 --> Undefined variable: category
+in APPPATH\Views\administradores_view.php on line 131.
+ 1 APPPATH\Views\administradores_view.php(131): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category', 'APPPATH\\Views\\administradores_view.php', 131, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\administradores_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('administradores_view', [], true)
+ 5 APPPATH\Controllers\Product.php(100): view('administradores_view')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->adm()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 06:48:31 --> Undefined variable: category
+in APPPATH\Views\administradores_view.php on line 195.
+ 1 APPPATH\Views\administradores_view.php(195): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category', 'APPPATH\\Views\\administradores_view.php', 195, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\administradores_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('administradores_view', [], true)
+ 5 APPPATH\Controllers\Product.php(100): view('administradores_view')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->adm()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 06:48:35 --> Undefined variable: category
+in APPPATH\Views\administradores_view.php on line 195.
+ 1 APPPATH\Views\administradores_view.php(195): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category', 'APPPATH\\Views\\administradores_view.php', 195, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\administradores_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('administradores_view', [], true)
+ 5 APPPATH\Controllers\Product.php(100): view('administradores_view')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->adm()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,6 @@
+CRITICAL - 2022-12-08 16:39:03 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Product.php on line 582.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->saveOfUser()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,295 @@
+ERROR - 2022-10-20 07:22:32 --> mysqli_sql_exception: Column 'product_price' cannot be null in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(27): App\Models\Product_model->saveProduct(Array)
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->save()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 07:22:32 --> Column 'product_price' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`) VALUES (\'mds\', NULL, \'8\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`) VALUES (\'mds\', NULL, \'8\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`) VALUES (\'mds\', NULL, \'8\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`) VALUES (:product_name:, :product_price:, :product_category_id:)', [...], false)
+ 5 APPPATH\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(27): App\Models\Product_model->saveProduct([...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-20 09:24:27 --> mysqli_sql_exception: Unknown column 'product_datetime_created' in 'field list' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(28): App\Models\Product_model->saveProduct(Array)
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->save()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 09:24:27 --> Unknown column 'product_datetime_created' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `product_datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'10\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `product_datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'10\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `product_datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'10\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `product_datetime_created`) VALUES (:product_name:, :product_price:, :product_category_id:, :product_datetime_created:)', [...], false)
+ 5 APPPATH\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(28): App\Models\Product_model->saveProduct([...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 11:14:30 --> Call to undefined function NOW()
+in APPPATH\Views\product_view.php on line 119.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 4 APPPATH\Controllers\Product.php(16): view('product_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-20 11:15:02 --> mysqli_sql_exception: Unknown column 'product_datetime_created' in 'field list' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(28): App\Models\Product_model->saveProduct(Array)
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->save()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 11:15:02 --> Unknown column 'product_datetime_created' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `product_datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'9\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `product_datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'9\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `product_datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'9\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `product_datetime_created`) VALUES (:product_name:, :product_price:, :product_category_id:, :product_datetime_created:)', [...], false)
+ 5 APPPATH\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(28): App\Models\Product_model->saveProduct([...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-20 11:15:14 --> mysqli_sql_exception: Unknown column 'product_datetime_created' in 'field list' in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(28): App\Models\Product_model->saveProduct(Array)
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->save()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 11:15:14 --> Unknown column 'product_datetime_created' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `product_datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'9\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `product_datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'9\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `product_datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'9\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `product_datetime_created`) VALUES (:product_name:, :product_price:, :product_category_id:, :product_datetime_created:)', [...], false)
+ 5 APPPATH\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(28): App\Models\Product_model->saveProduct([...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-20 11:16:10 --> mysqli_sql_exception: Column 'datetime_created' cannot be null in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(28): App\Models\Product_model->saveProduct(Array)
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->save()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 11:16:10 --> Column 'datetime_created' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'9\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'9\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'9\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (:product_name:, :product_price:, :product_category_id:, :datetime_created:)', [...], false)
+ 5 APPPATH\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(28): App\Models\Product_model->saveProduct([...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-20 11:16:23 --> mysqli_sql_exception: Column 'datetime_created' cannot be null in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(28): App\Models\Product_model->saveProduct(Array)
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->save()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 11:16:23 --> Column 'datetime_created' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'9\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'9\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'9\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (:product_name:, :product_price:, :product_category_id:, :datetime_created:)', [...], false)
+ 5 APPPATH\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(28): App\Models\Product_model->saveProduct([...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-20 11:17:16 --> mysqli_sql_exception: Column 'datetime_created' cannot be null in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(28): App\Models\Product_model->saveProduct(Array)
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->save()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 11:17:16 --> Column 'datetime_created' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'9\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'9\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'feijoada\', \'Transporte\', \'9\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (:product_name:, :product_price:, :product_category_id:, :datetime_created:)', [...], false)
+ 5 APPPATH\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(28): App\Models\Product_model->saveProduct([...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-20 11:18:55 --> mysqli_sql_exception: Column 'datetime_created' cannot be null in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(28): App\Models\Product_model->saveProduct(Array)
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->save()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 11:18:55 --> Column 'datetime_created' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'Champions WR\', \'Isolamento profilático\', \'12\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'Champions WR\', \'Isolamento profilático\', \'12\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'Champions WR\', \'Isolamento profilático\', \'12\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (:product_name:, :product_price:, :product_category_id:, :datetime_created:)', [...], false)
+ 5 APPPATH\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(28): App\Models\Product_model->saveProduct([...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-20 11:31:36 --> mysqli_sql_exception: Column 'datetime_created' cannot be null in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(32): App\Models\Product_model->saveProduct(Array)
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->save()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 11:31:36 --> Column 'datetime_created' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'mds\', \'Morte de um familiar\', \'10\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'mds\', \'Morte de um familiar\', \'10\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'mds\', \'Morte de um familiar\', \'10\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (:product_name:, :product_price:, :product_category_id:, :datetime_created:)', [...], false)
+ 5 APPPATH\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(32): App\Models\Product_model->saveProduct([...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-20 11:32:50 --> mysqli_sql_exception: Column 'datetime_created' cannot be null in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(32): App\Models\Product_model->saveProduct(Array)
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->save()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 11:32:50 --> Column 'datetime_created' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'feijoada\', \'Morte de um familiar\', \'8\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'feijoada\', \'Morte de um familiar\', \'8\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'feijoada\', \'Morte de um familiar\', \'8\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (:product_name:, :product_price:, :product_category_id:, :datetime_created:)', [...], false)
+ 5 APPPATH\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(32): App\Models\Product_model->saveProduct([...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-20 11:33:32 --> mysqli_sql_exception: Column 'datetime_created' cannot be null in C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\projeto_soc\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\projeto_soc\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\projeto_soc\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\projeto_soc\app\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\projeto_soc\app\Controllers\Product.php(32): App\Models\Product_model->saveProduct(Array)
+#6 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(907): App\Controllers\Product->save()
+#7 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\projeto_soc\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projeto_soc\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-10-20 11:33:32 --> Column 'datetime_created' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'feijoada\', \'Morte de um familiar\', \'8\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'feijoada\', \'Morte de um familiar\', \'8\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (\'feijoada\', \'Morte de um familiar\', \'8\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `product` (`product_name`, `product_price`, `product_category_id`, `datetime_created`) VALUES (:product_name:, :product_price:, :product_category_id:, :datetime_created:)', [...], false)
+ 5 APPPATH\Models\Product_model.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Product.php(32): App\Models\Product_model->saveProduct([...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->save()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 11:35:24 --> Object of class DateTime could not be converted to string
+in APPPATH\Views\product_view.php on line 119.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 4 APPPATH\Controllers\Product.php(16): view('product_view', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

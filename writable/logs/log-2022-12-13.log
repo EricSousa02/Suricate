@@ -1,0 +1,72 @@
+CRITICAL - 2022-12-13 08:36:33 --> unlink(assets/uploads/): Is a directory
+in APPPATH\Controllers\Product.php on line 644.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(assets/uploads/): Is a directory', 'APPPATH\\Controllers\\Product.php', 644, [...])
+ 2 APPPATH\Controllers\Product.php(644): unlink('FCPATH\\assets\\uploads')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->updateOfUser()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 08:39:54 --> unlink(assets/uploads/): Is a directory
+in APPPATH\Controllers\Product.php on line 696.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(assets/uploads/): Is a directory', 'APPPATH\\Controllers\\Product.php', 696, [...])
+ 2 APPPATH\Controllers\Product.php(696): unlink('FCPATH\\assets\\uploads')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->deleteOfUser()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 08:43:25 --> unlink(): http does not allow unlinking
+in APPPATH\Controllers\Product.php on line 696.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(): http does not allow unlinking', 'APPPATH\\Controllers\\Product.php', 696, [...])
+ 2 APPPATH\Controllers\Product.php(696): unlink('http://localhost/suricate/public/assets/uploads/1670931641_c8922b20310c301ec69a.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->deleteOfUser()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 08:46:21 --> unlink(assets/uploads/): Is a directory
+in APPPATH\Controllers\Product.php on line 696.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(assets/uploads/): Is a directory', 'APPPATH\\Controllers\\Product.php', 696, [...])
+ 2 APPPATH\Controllers\Product.php(696): unlink('FCPATH\\assets\\uploads')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->deleteOfUser()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 08:50:41 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Product.php on line 639.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->updateOfUser()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-13 10:11:40 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'suricato' in C:\xampp\htdocs\suricate\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\suricate\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'suricato', 3306, '', 0)
+#1 C:\xampp\htdocs\suricate\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\suricate\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\suricate\app\Controllers\Product.php(128): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\xampp\htdocs\suricate\app\Controllers\Product.php(561): App\Controllers\Product->getAllProduct()
+#5 C:\xampp\htdocs\suricate\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#6 C:\xampp\htdocs\suricate\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 C:\xampp\htdocs\suricate\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\suricate\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'suricato' in C:\xampp\htdocs\suricate\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\suricate\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\suricate\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\suricate\app\Controllers\Product.php(128): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#3 C:\xampp\htdocs\suricate\app\Controllers\Product.php(561): App\Controllers\Product->getAllProduct()
+#4 C:\xampp\htdocs\suricate\system\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+#5 C:\xampp\htdocs\suricate\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#6 C:\xampp\htdocs\suricate\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\suricate\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-13 10:11:40 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'suricato'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Product.php(128): CodeIgniter\Database\BaseConnection->query('SELECT * FROM product')
+ 3 APPPATH\Controllers\Product.php(561): App\Controllers\Product->getAllProduct()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->usuarios()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

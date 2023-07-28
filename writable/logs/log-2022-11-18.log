@@ -1,0 +1,31 @@
+ERROR - 2022-11-18 08:11:00 --> mysqli_sql_exception: Unknown column 'Teto' in 'field list' in C:\xampp\htdocs\suricate\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\suricate\system\Database\MySQLi\Connection.php(292): mysqli->query('\n        UPDATE...', 0)
+#1 C:\xampp\htdocs\suricate\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('\n        UPDATE...')
+#2 C:\xampp\htdocs\suricate\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('\n        UPDATE...')
+#3 C:\xampp\htdocs\suricate\app\Models\Product_model.php(67): CodeIgniter\Database\BaseConnection->query('\n        UPDATE...', Array)
+#4 C:\xampp\htdocs\suricate\app\Controllers\Product.php(96): App\Models\Product_model->finishNegate('171', 'Teto')
+#5 C:\xampp\htdocs\suricate\system\CodeIgniter.php(907): App\Controllers\Product->Negate()
+#6 C:\xampp\htdocs\suricate\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#7 C:\xampp\htdocs\suricate\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\suricate\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-18 08:11:00 --> Unknown column 'Teto' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('
+        UPDATE product SET finished = NOW(), status = \'recusado\', visualizado_por = Teto WHERE product_id = \'171\'
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('
+        UPDATE product SET finished = NOW(), status = \'recusado\', visualizado_por = Teto WHERE product_id = \'171\'
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('
+        UPDATE product SET finished = NOW(), status = \'recusado\', visualizado_por = Teto WHERE product_id = \'171\'
+        ')
+ 4 APPPATH\Models\Product_model.php(67): CodeIgniter\Database\BaseConnection->query('
+        UPDATE product SET finished = NOW(), status = \'recusado\', visualizado_por = Teto WHERE product_id = :product_id:
+        ', [...])
+ 5 APPPATH\Controllers\Product.php(96): App\Models\Product_model->finishNegate('171', 'Teto')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->Negate()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

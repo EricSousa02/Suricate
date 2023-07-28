@@ -1,0 +1,60 @@
+CRITICAL - 2022-11-26 08:08:08 --> Undefined property: stdClass::$visualizado_por
+in APPPATH\Views\product_view.php on line 185.
+ 1 APPPATH\Views\product_view.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$visualizado_por', 'APPPATH\\Views\\product_view.php', 185)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 5 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 08:11:14 --> Undefined property: stdClass::$visualizado_por
+in APPPATH\Views\product_view.php on line 185.
+ 1 APPPATH\Views\product_view.php(185): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$visualizado_por', 'APPPATH\\Views\\product_view.php', 185)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 5 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 08:19:37 --> Unsupported operand types: string + string
+in APPPATH\Controllers\Product.php on line 597.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->saveOfUser()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 09:12:46 --> Undefined property: stdClass::$imagem
+in APPPATH\Views\product_view.php on line 524.
+ 1 APPPATH\Views\product_view.php(524): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$imagem', 'APPPATH\\Views\\product_view.php', 524)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\product_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('product_view', [], true)
+ 5 APPPATH\Controllers\Product.php(31): view('product_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 10:00:31 --> Undefined variable $imageName
+in APPPATH\Controllers\Product.php on line 597.
+ 1 APPPATH\Controllers\Product.php(597): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imageName', 'APPPATH\\Controllers\\Product.php', 597)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->saveOfUser()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 10:01:54 --> Undefined variable $imageName
+in APPPATH\Controllers\Product.php on line 597.
+ 1 APPPATH\Controllers\Product.php(597): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imageName', 'APPPATH\\Controllers\\Product.php', 597)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->saveOfUser()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 10:06:02 --> Undefined variable $imageName
+in APPPATH\Controllers\Product.php on line 593.
+ 1 APPPATH\Controllers\Product.php(593): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imageName', 'APPPATH\\Controllers\\Product.php', 593)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Product->saveOfUser()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
